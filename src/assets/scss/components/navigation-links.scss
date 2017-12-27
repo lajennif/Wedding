@@ -1,19 +1,17 @@
 @import 'settings';
 
 .navigation-links {
-  @media #{$large-up} {
-    display: flex;
-    margin: auto;
-    justify-content: flex-end; 
-  }
+    margin-top: 80px !important;
+  
 }
+
 
 .menu-item { 
   flex-direction: row;
-  padding: 0 15px;
+  padding: 0 80px;
   list-style: none;
   a {
-    color: #D9D9D9;
+    color: rgb(85, 84, 84);
     &:hover, &:focus {
       color: $dark-gray;
     }

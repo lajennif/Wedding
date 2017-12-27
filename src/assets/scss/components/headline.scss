@@ -1,0 +1,74 @@
+@import 'settings';
+.background-image {
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.headline {
+  margin-top: 80px;
+
+  .title {
+    font-family: "Lato";
+    font-size: 80px;
+    line-height: 1em;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0px;
+    font-weight: lighter;
+    font-style: normal;
+    color: #747474 !important;
+    margin: 0 0 28px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    &.title-small {
+      font-size: 46px; 
+      margin-top: -20px;
+           
+    }
+  }
+  a {
+    color: rgb(85, 84, 84);
+    &:hover, &:focus {
+      color: $dark-gray;
+    }
+}
+  .subtitle {
+    font-family: "Lato";
+    font-size: 14px;
+    line-height: 1.25em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(28,28,28,.8);
+    margin: 7px 0 60px;
+  }
+}
+
+.tile {
+  display:inline-block;
+  width: 600px;
+  height: 80px;
+  background-color: none;
+  opacity: .2;
+  margin-left: 80px;
+  color: black;
+}
+
+
+.content {
+  padding:20px;
+  background: rgba(193, 193, 193, 0.7);
+  font-family: "Lato";
+  font-size: 21px;
+  color: rgb(70, 69, 69);
+  font-family: 'Antic Didone', serif;
+  line-height: 40px;
+  margin-top: -15px;
+    &.content-small {
+    font-size: 20px;  
+    margin-top: -15px;
+  }
+}
