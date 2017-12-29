@@ -1,15 +1,24 @@
 @import 'settings';
 
 .navigation-links {
-    margin-top: 80px !important;
-  
+  margin-top: 50px;
+  @media #{$medium-up} {
+    margin-top: 80px; 
+  }
 }
-
 
 .menu-item { 
   flex-direction: row;
-  padding: 0 80px;
+  padding: 0 12px;
   list-style: none;
+  font-size: 14px;
+  @media #{$medium-up} {
+    padding: 0 55px;
+    font-size: 26px;
+  }
+  @media #{$large-up} {
+    padding: 0 80px;
+  }
   a {
     color: rgb(85, 84, 84);
     &:hover, &:focus {

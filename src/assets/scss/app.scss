@@ -1,8 +1,5 @@
 @charset 'utf-8';
 
-@import 'components/headline.scss';
-@import 'components/navigation-links.scss';
-
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
@@ -54,3 +51,6 @@
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+@import 'components/headline.scss';
+@import 'components/navigation-links.scss';
