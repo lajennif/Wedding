@@ -1,60 +1,55 @@
 @import 'settings';
-.background-image {  
-text-align: center;
-margin: auto;
-padding: 0;
-background: no-repeat center center fixed; 
-background-size: cover;
-@media #{$large-up} {
-}
+.background-image {
+    text-align: center;
+    margin: auto;
+    padding: 0;
+    background: no-repeat center center fixed;
+    background-size: cover;
+    @media #{$large-up} {}
 }
 
 .headline {
-  margin-top: 55px;
-  font-size: 48px;
-  @media #{$medium-up} {
-    margin-top: 20px;
-  } 
-  @media #{$large-up} {
-    margin-top: 10px;
-  }
-
-  .title { 
-    font-family: "Lato";
-    font-size: 50px;
-    line-height: 1em;
-    text-transform: none;
-    text-decoration: none;
-    letter-spacing: 0px;
-    font-weight: lighter;
-    font-style: normal;
-    color: #747474;
-    margin: 0 0 10px;
-    text-align: center;
-    display: inline-block;
-    width: 100%;
+    margin-top: 55px;
+    font-size: 48px;
     @media #{$medium-up} {
-    font-size: 80px; 
-  }
+        margin-top: 20px;
+    }
     @media #{$large-up} {
-    font-size: 80px; 
-     }
+        margin-top: 10px;
+    }
+    .title {
+        font-family: "Lato";
+        font-size: 50px;
+        font-weight: lighter;
+        color: #747474;
+        text-align: center;
+        width: 100%;
+        @media #{$medium-up} {
+            font-size: 80px;
+        }
+        @media #{$large-up} {
+            font-size: 80px;
+        }
     }
     &.title-small {
-      font-size: 46px; 
-      margin-top: 10px;
-        }      
-    }
-
-  a {
-    color: rgb(85, 84, 84);
-    &:hover, &:focus {
-      color: $dark-gray;
-    }
-    a:visited{ color: gray 
+        font-size: 46px;
+        margin-top: 10px;
     }
 }
-  .subtitle {
+
+a {
+    color: rgb(85, 84, 84);
+    &:hover,
+    &:focus {
+        font-weight: 300px !important;
+        color: $dark-gray;
+    }
+    a:visited {
+        color: gray
+    }
+}
+
+.subtitle {
     font-family: "Lato";
     font-size: 14px;
     line-height: 1.25em;
@@ -65,100 +60,100 @@ background-size: cover;
     font-style: normal;
     color: rgba(93, 92, 92, 0.8);
     @media #{$medium-up} {
-    font-size: 70px;
-    margin: 10px; 
-    @media #{$small-up} {
-        font-size: 35px;
-      }
-  }
+        font-size: 70px;
+        margin: 10px;
+        @media #{$small-up} {
+            font-size: 35px;
+        }
+    }
 }
 
 .tile {
-  display:inline-block;
-  width: 600px;
-  height: 80px;
-  background-color: none;
-  opacity: .2;
-  margin-left: 80px;
-  color: black;
-  
+    display: inline-block;
+    width: 600px;
+    height: 80px;
+    background-color: none;
+    opacity: .2;
+    margin-left: 80px;
+    color: black;
 }
-
 
 .content-container {
-  padding:20px;
-  background: rgba(223, 221, 221, 0.8);
-  font-family: "Lato";  
-  color: rgb(70, 69, 69);  
-  line-height: 40px;  
-  margin-top: 25px;
-  @media #{medium-up} {
-  margin-bottom: 50px;
-  }
-  
+    padding: 20px;
+    background: rgba(223, 221, 221, 0.8);
+    font-family: "Lato";
+    color: rgb(70, 69, 69);
+    line-height: 40px;
+    margin-top: 25px;
+    @media #{medium-up} {
+        margin-bottom: 50px;
+    }
     .content {
-      font-size: 20px;
-      @media #{medium-up} {
-      font-size: 28px;  
-      }
+        font-size: 20px;
+        @media #{medium-up} {
+            font-size: 28px;
+        }
+    }
+    .list-item {
+      list-style-type: none;
     }
     .content-small {
-      font-size: 20px;  
-      padding-top: 10px;
-      margin-bottom: 20px; 
-  }
+        font-size: 20px;
+        padding-top: 10px;
+        margin-bottom: 20px;
+    }
 }
+
 .reveal-if-active {
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  font-size: 16px;
-  transform: scale(0.8);
-  transition: 0.5s;
-  
-  label {
-    display: block;
-    margin: 0 0 3px 0;
-  }
-  input[type=text] {
-    width: 100%;
-  }
-  
-  input[type="radio"]:checked ~ &,
-  input[type="checkbox"]:checked ~ & {
-    opacity: 1;
-    max-height: 100px;
-    padding: 10px 20px;
-    transform: scale(1);
-    overflow: visible;
-  }
-  
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    font-size: 16px;
+    transform: scale(0.8);
+    transition: 0.5s;
+    label {
+        display: block;
+        margin: 0 0 3px 0;
+    }
+    input[type=text] {
+        width: 100%;
+    }
+    input[type="radio"]:checked~&,
+    input[type="checkbox"]:checked~& {
+        opacity: 1;
+        max-height: 100px;
+        padding: 10px 20px;
+        transform: scale(1);
+        overflow: visible;
+    }
 }
+
 /** RSVP section **/
 
 form {
-  max-width: 500px;
-  margin: 20px auto;
-  > div {
-    margin: 0 0 20px 0;
-    label {
-      font-weight: bold;
+    max-width: 500px;
+    margin: 20px auto;
+    >div {
+        margin: 0 0 20px 0;
+        label {
+            font-weight: bold;
+        }
+        >div {
+            padding: 5px;
+        }
     }
-    > div {
-      padding: 5px;
+    >h4 {
+        color: green;
+        font-size: 24px;
+        margin: 0 0 10px 0;
+        border-bottom: 2px solid green;
     }
-  }
-  > h4 {
-    color: green;
-    font-size: 24px;
-    margin: 0 0 10px 0;
-    border-bottom: 2px solid green;
-  }
 }
 
 body {
-  font-size: 20px;
+    font-size: 20px;
 }
+
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }

@@ -20,8 +20,9 @@
     padding: 0 80px;
   }
   a {
-    color: rgb(85, 84, 84);
+    color: #555454;
     &:hover, &:focus {
+      font-weight: 300px !important;
       color: $dark-gray;
     }
   }  
